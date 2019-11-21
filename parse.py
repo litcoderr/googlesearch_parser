@@ -80,7 +80,7 @@ if __name__ == '__main__':
         result = parse_file(csv_file_path)
 
         with open(os.path.join(root, 'output', csv_file_name), 'w') as output_file:
-            writer = csv.writer(output_file)
+            writer = csv.writer(output_file, lineterminator = '\n')
             writer.writerows(result)
             output_file.close()
 

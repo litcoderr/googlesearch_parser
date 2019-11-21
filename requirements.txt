@@ -4,3 +4,4 @@ chardet
 idna
 requests
 selenium
+lxml
